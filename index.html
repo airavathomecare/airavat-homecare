@@ -3,83 +3,116 @@
 <head>
 <title>Airavat Homecare</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f4f6f8;
+font-family:Arial;
+background:#f5f7fa;
 }
 
 header{
-background:#0a7cc2;
+background:linear-gradient(90deg,#0077b6,#023e8a);
 color:white;
-padding:20px;
-text-align:center;
+padding:25px;
 font-size:32px;
 font-weight:bold;
+text-align:center;
 }
 
 nav{
-background:#033d63;
-padding:10px;
+background:#03045e;
+padding:12px;
 text-align:center;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin:20px;
 text-decoration:none;
 font-size:18px;
 }
 
 .hero{
-padding:60px;
+background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
+background-size:cover;
+background-position:center;
+padding:120px;
+color:white;
 text-align:center;
-background:white;
 }
 
 .hero h1{
-font-size:40px;
-color:#0a7cc2;
+font-size:50px;
+margin-bottom:10px;
 }
 
-.products{
-padding:40px;
+.hero p{
+font-size:20px;
 }
 
-.products h2{
+.section{
+padding:60px 40px;
+}
+
+.section h2{
 text-align:center;
-font-size:30px;
-margin-bottom:30px;
+font-size:32px;
+margin-bottom:40px;
+color:#023e8a;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .card{
 background:white;
-padding:20px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-color:#0a7cc2;
+color:#0077b6;
+}
+
+.about{
+background:white;
+text-align:center;
 }
 
 footer{
-background:#033d63;
+background:#03045e;
 color:white;
 text-align:center;
-padding:20px;
+padding:30px;
 margin-top:40px;
 }
 
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -96,66 +129,81 @@ AIRAVAT HOMECARE
 </nav>
 
 <section class="hero">
-<h1>Complete Home Cleaning Solutions</h1>
-<p>Premium quality homecare products for homes, hotels and industries.</p>
+<h1>Premium Home Cleaning Products</h1>
+<p>Powerful cleaning solutions for homes, hotels & industries</p>
 </section>
 
-<section class="products">
+<section class="section">
 
-<h2>Our Products</h2>
+<h2>Our Product Categories</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Disinfectant Fluids</h3>
-<p>White Disinfectant Fluid, Premium White Disinfectant, Black Phenyl</p>
+<h3>Disinfectants</h3>
+<p>White disinfectant fluid, black phenyl, premium disinfectant solutions.</p>
 </div>
 
 <div class="card">
 <h3>Floor Cleaners</h3>
-<p>Rose, Lemon, Jasmine, Lavender, Dettol Gel Floor Cleaners</p>
+<p>Rose, Lemon, Jasmine, Lavender and Dettol gel floor cleaners.</p>
 </div>
 
 <div class="card">
-<h3>Laundry Products</h3>
-<p>Detergent, Perfume Laundry Liquid, Laundry Bleach</p>
+<h3>Laundry Care</h3>
+<p>Laundry detergent, perfume detergent, bleach and stain remover.</p>
 </div>
 
 <div class="card">
-<h3>Bathroom Cleaners</h3>
-<p>Toilet Cleaner, Toilet Bleach, Urinal Cubes</p>
+<h3>Bathroom Care</h3>
+<p>Toilet cleaner, toilet bleach, urinal cubes and sanitizing liquids.</p>
 </div>
 
 <div class="card">
-<h3>Kitchen Cleaners</h3>
-<p>Dishwash Liquid, Lemon Utensil Soap</p>
+<h3>Kitchen Cleaning</h3>
+<p>Utensil liquid soap, lemon dishwash and powerful degreasers.</p>
 </div>
 
 <div class="card">
-<h3>Glass & Surface</h3>
-<p>Glass Cleaner, Tap Cleaner, Chimney Cleaner</p>
+<h3>Surface & Glass</h3>
+<p>Glass cleaner, tap cleaner, chimney cleaner and polish.</p>
 </div>
 
 <div class="card">
 <h3>Hygiene Products</h3>
-<p>Handwash, Sanitizer, Room Freshener</p>
+<p>Handwash, sanitizers and room fresheners.</p>
 </div>
 
 <div class="card">
 <h3>Cleaning Tools</h3>
-<p>Wipers, Mops, Dusters, Brooms, Bin Bags</p>
+<p>Wipers, mops, dusters, grass brooms and bin bags.</p>
 </div>
 
 </div>
+
+</section>
+
+<section class="section about">
+
+<h2>About Airavat Homecare</h2>
+
+<p>
+Airavat Homecare provides high quality home cleaning products
+designed for homes, offices, hotels and industries.
+Our mission is to deliver powerful cleaning solutions
+with strong fragrance and effective hygiene protection.
+</p>
 
 </section>
 
 <footer>
 
-<p>Airavat Homecare © 2026</p>
+<p>© 2026 Airavat Homecare</p>
 <p>Quality Cleaning Products Manufacturer</p>
 
 </footer>
+
+<a class="whatsapp" href="https://wa.me/">WhatsApp Order</a>
 
 </body>
 </html>
