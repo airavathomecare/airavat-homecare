@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Airavat Homecare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f5f7fb;
+}
+
+header{
+background:#0b4da2;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#083b7a;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:60px;
+text-align:center;
+background:linear-gradient(120deg,#0b4da2,#2bb673);
+color:white;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#0b4da2;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Airavat Homecare</h1>
+<p>Complete Cleaning & Hygiene Solutions</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Professional Cleaning Products</h2>
+<p>Disinfectants • Floor Cleaners • Laundry • Pest Control • Cleaning Tools</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+<h3>White Disinfectant</h3>
+<p>Powerful germ killing disinfectant.</p>
+</div>
+
+<div class="card">
+<h3>Gel Floor Cleaner</h3>
+<p>Rose • Lemon • Lavender • Jasmine</p>
+</div>
+
+<div class="card">
+<h3>Glass Cleaner</h3>
+<p>Crystal clear shine for glass.</p>
+</div>
+
+<div class="card">
+<h3>Toilet Cleaner</h3>
+<p>Removes tough stains.</p>
+</div>
+
+<div class="card">
+<h3>Hand Wash</h3>
+<p>Rose • Lemon • Sandal • Coconut</p>
+</div>
+
+<div class="card">
+<h3>Laundry Detergent</h3>
+<p>Powerful stain removal.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© Airavat Homecare</p>
+</footer>
+
+</body>
+</html>
