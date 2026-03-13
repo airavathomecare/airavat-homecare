@@ -1,86 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airavat Homecare | Premium Cleaning Products</title>
 
-<title>Airavat Homecare | Premium Cleaning & Hygiene Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-{
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fb;
+background:#f4f6fb;
 color:#333;
 }
 
-/ HEADER /
+/* NAVBAR */
 
-header{
-background:#0b2345;
-color:white;
+nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 .logo{
-font-size:30px;
-font-weight:bold;
-letter-spacing:1px;
+font-size:26px;
+font-weight:600;
+color:#004aad;
 }
 
 nav a{
-color:white;
 margin-left:25px;
 text-decoration:none;
-font-size:17px;
+color:#333;
+font-weight:500;
 }
 
-/ HERO /
+/* HERO */
 
 .hero{
-height:90vh;
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
-background-size:cover;
-background-position:center;
+height:85vh;
+background:linear-gradient(120deg,#004aad,#00a8e8);
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
-padding:40px;
+padding:20px;
 }
 
 .hero h1{
-font-size:60px;
-margin-bottom:20px;
+font-size:55px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:22px;
+font-size:20px;
+max-width:650px;
+margin:auto;
 }
 
-.btn{
+.hero button{
 margin-top:30px;
-padding:15px 35px;
-background:#00a8e8;
-color:white;
-border-radius:40px;
-text-decoration:none;
-font-size:18px;
-display:inline-block;
+padding:14px 35px;
+border:none;
+background:white;
+color:#004aad;
+font-weight:600;
+border-radius:30px;
+cursor:pointer;
 }
 
-/ SECTION /
+/* SECTION */
 
 .section{
 padding:80px 10%;
@@ -88,136 +90,106 @@ padding:80px 10%;
 
 .section h2{
 text-align:center;
-font-size:40px;
+font-size:36px;
 margin-bottom:50px;
-color:#0b2345;
+color:#004aad;
 }
 
-/ CATEGORY GRID /
+/* PRODUCT GRID */
 
-.grid{
+.products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
 .card{
 background:white;
+padding:25px;
 border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.12);
-overflow:hidden;
-transition:0.3s;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 .card img{
 width:100%;
-height:220px;
+height:160px;
 object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
 }
 
 .card h3{
-padding:18px;
 color:#004aad;
+margin-bottom:8px;
 }
 
-.card p{
-padding:0 18px 25px;
-color:#555;
-}
-
-/ TRUST SECTION /
+/* TRUST */
 
 .trust{
-background:#eef3fb;
+background:white;
 text-align:center;
 }
 
 .trust-grid{
 display:flex;
 justify-content:center;
-gap:70px;
-margin-top:40px;
-font-size:22px;
-font-weight:bold;
-}
-
-/ PRODUCT SECTION /
-
-.products{
-background:white;
-padding:80px 10%;
-}
-
-.products h3{
+gap:80px;
+font-size:20px;
 margin-top:30px;
-color:#004aad;
+font-weight:600;
 }
 
-.products ul{
-margin-top:10px;
-columns:2;
-line-height:30px;
-}
-
-/ ABOUT /
+/* ABOUT */
 
 .about{
-background:#f5f7fb;
 text-align:center;
-}
-
-.about p{
+line-height:1.8;
 max-width:900px;
 margin:auto;
-font-size:18px;
-line-height:30px;
 }
 
-/ DEALER FORM /
+/* DEALER */
 
 .dealer{
 background:#004aad;
 color:white;
 text-align:center;
-padding:90px 20px;
-}
-
-.dealer form{
-margin-top:30px;
+padding:80px 20px;
 }
 
 .dealer input{
 padding:12px;
-margin:8px;
-width:250px;
+margin:10px;
 border:none;
 border-radius:6px;
+width:240px;
 }
 
 .dealer button{
 padding:12px 30px;
-background:white;
-color:#004aad;
 border:none;
 border-radius:30px;
-font-weight:bold;
+background:white;
+color:#004aad;
+font-weight:600;
 cursor:pointer;
 }
 
-/ FOOTER /
+/* FOOTER */
 
 footer{
-background:#0b2345;
+background:#111;
 color:white;
 text-align:center;
-padding:40px;
+padding:30px;
 }
 
-/ WHATSAPP */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -225,10 +197,10 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:16px 30px;
+padding:15px 25px;
 border-radius:30px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
 }
 
 </style>
@@ -237,74 +209,31 @@ font-weight:bold;
 
 <body>
 
-<header>
-
-<div class="logo">AIRAVAT HOMECARE</div>
-
 <nav>
+
+<div class="logo">Airavat Homecare</div>
+
+<div>
 <a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#dealer">Dealership</a>
-</nav>
+</div>
 
-</header>
+</nav>
 
 <section class="hero">
 
 <div>
 
-<h1>Powerful Cleaning. Trusted Hygiene.</h1>
+<h1>Premium Cleaning Solutions</h1>
 
-<p>Premium Cleaning Solutions for Homes, Hotels, Offices & Industries</p>
+<p>
+High quality hygiene and cleaning products designed for homes,
+offices, hotels and industries.
+</p>
 
-<a class="btn" href="#products">Explore Products</a>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Our Product Categories</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04">
-<h3>Disinfectants</h3>
-<p>Powerful disinfectant fluids and phenyl for effective germ protection.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583947581924-a31c4a3c8b6d">
-<h3>Floor Cleaners</h3>
-<p>Gel floor cleaners designed to remove dirt and maintain freshness.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1">
-<h3>Laundry Care</h3>
-<p>High performance detergents and bleach for spotless clothes.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
-<h3>Kitchen Cleaning</h3>
-<p>Dishwashing liquids and degreasers for perfect utensil cleaning.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
-<h3>Hygiene Products</h3>
-<p>Handwash and sanitizers for daily hygiene protection.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752">
-<h3>Cleaning Tools</h3>
-<p>Mops, wipers, brooms and dusters for efficient cleaning.</p>
-</div>
+<button>Explore Products</button>
 
 </div>
 
@@ -316,39 +245,57 @@ font-weight:bold;
 
 <div class="trust-grid">
 
-<div>50+ Premium Products</div>
-<div>Advanced Cleaning Technology</div>
-<div>Trusted Hygiene Solutions</div>
+<div>50+ Products</div>
+<div>Premium Formulations</div>
+<div>Trusted Quality</div>
 
 </div>
 
 </section>
 
-<section class="products" id="products">
+<section class="section" id="products">
 
-<h2>Complete Product Range</h2>
+<h2>Our Products</h2>
 
-<h3>Disinfectants</h3>
-<ul>
-<li>White Disinfectant Fluid</li>
-<li>Premium White Disinfectant</li>
-<li>White Disinfectant Concentrate</li>
-<li>Black Phenyle</li>
-</ul>
+<div class="products">
 
-<h3>Floor Cleaning</h3>
-<ul>
-<li>Gel Floor Cleaner</li>
-<li>Italian Marble Cleaner</li>
-<li>Wooden Floor Cleaner</li>
-</ul>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583947581924-a31c4a3c8b6d">
+<h3>Gel Floor Cleaner</h3>
+<p>Rose, Lemon, Jasmine and Lavender fragrance floor cleaners.</p>
+</div>
 
-<h3>Laundry Care</h3>
-<ul>
-<li>Laundry Detergent</li>
-<li>Perfume Laundry Detergent</li>
-<li>Laundry Bleach</li>
-</ul>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04">
+<h3>White Disinfectant</h3>
+<p>Powerful disinfectant fluid for hygienic surfaces.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
+<h3>Utensil Liquid</h3>
+<p>Strong grease removal dishwashing liquid.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1">
+<h3>Laundry Detergent</h3>
+<p>Stain removal detergent for every type of cloth.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
+<h3>Hand Wash</h3>
+<p>Fragrant liquid handwash for daily hygiene.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752">
+<h3>Cleaning Tools</h3>
+<p>Mops, wipers, dusters and brooms for professional cleaning.</p>
+</div>
+
+</div>
 
 </section>
 
@@ -358,9 +305,14 @@ font-weight:bold;
 
 <p>
 
-Airavat Homecare is a fast growing brand dedicated to delivering high quality cleaning and hygiene products for homes, businesses and industrial facilities. Our product portfolio includes disinfectants, detergents, surface cleaners and cleaning tools designed for powerful performance and long lasting freshness.
+Airavat Homecare is a fast growing brand dedicated to delivering
+high quality cleaning and hygiene solutions. Our extensive range of
+cleaning chemicals, detergents, disinfectants and cleaning tools
+are designed to maintain superior hygiene standards.
 
-With a strong focus on quality formulations and customer satisfaction, Airavat Homecare aims to become a trusted name in hygiene solutions across households, hotels, offices and industries.
+We are committed to providing reliable products that ensure
+clean, fresh and healthy environments for homes, businesses
+and industries.
 
 </p>
 
@@ -370,21 +322,17 @@ With a strong focus on quality formulations and customer satisfaction, Airavat H
 
 <h2>Become a Distributor</h2>
 
-<p>Join the Airavat Homecare distribution network.</p>
+<p>Join our growing network of dealers and distributors.</p>
 
-<form>
+<br>
 
 <input type="text" placeholder="Your Name">
-
+<input type="text" placeholder="Phone Number">
 <input type="email" placeholder="Email">
-
-<input type="text" placeholder="Phone">
 
 <br>
 
 <button>Submit Enquiry</button>
-
-</form>
 
 </section>
 
@@ -395,7 +343,7 @@ With a strong focus on quality formulations and customer satisfaction, Airavat H
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/">Order on WhatsApp</a>
+<a class="whatsapp" href="#">WhatsApp Order</a>
 
 </body>
 </html>
