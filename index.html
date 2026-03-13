@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Airavat Homecare</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airavat Homecare</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f5f7fa;
+background:#f4f6fb;
 }
 
 header{
-background:linear-gradient(90deg,#0077b6,#023e8a);
+background:linear-gradient(90deg,#004aad,#00a8e8);
 color:white;
-padding:25px;
-font-size:32px;
-font-weight:bold;
-text-align:center;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav{
-background:#03045e;
-padding:12px;
-text-align:center;
+.logo{
+font-size:28px;
+font-weight:bold;
 }
 
 nav a{
 color:white;
-margin:20px;
+margin:15px;
 text-decoration:none;
 font-size:18px;
 }
 
 .hero{
-background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
+background:url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
 background-size:cover;
 background-position:center;
-padding:120px;
+padding:140px 20px;
 color:white;
 text-align:center;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:20px;
+font-size:48px;
 }
 
 .section{
@@ -59,9 +52,8 @@ padding:60px 40px;
 
 .section h2{
 text-align:center;
-font-size:32px;
 margin-bottom:40px;
-color:#023e8a;
+color:#004aad;
 }
 
 .grid{
@@ -72,31 +64,31 @@ gap:25px;
 
 .card{
 background:white;
-padding:25px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:#0077b6;
-}
-
-.about{
-background:white;
+padding:20px;
 text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.products{
+background:white;
+padding:40px;
+}
+
+.products ul{
+line-height:28px;
 }
 
 footer{
-background:#03045e;
+background:#00296b;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
+padding:40px;
 }
 
 .whatsapp{
@@ -112,86 +104,181 @@ font-weight:bold;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-AIRAVAT HOMECARE
-</header>
+
+<div class="logo">AIRAVAT HOMECARE</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-<h1>Premium Home Cleaning Products</h1>
-<p>Powerful cleaning solutions for homes, hotels & industries</p>
+</header>
+
+<section class="hero" id="home">
+
+<h1>Professional Cleaning Solutions</h1>
+<p>Premium Homecare Products for Homes, Hotels & Industries</p>
+
 </section>
 
 <section class="section">
 
-<h2>Our Product Categories</h2>
+<h2>Product Categories</h2>
 
 <div class="grid">
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04">
 <h3>Disinfectants</h3>
-<p>White disinfectant fluid, black phenyl, premium disinfectant solutions.</p>
+<p>White disinfectant fluid and phenyl products</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1583947581924-a31c4a3c8b6d">
 <h3>Floor Cleaners</h3>
-<p>Rose, Lemon, Jasmine, Lavender and Dettol gel floor cleaners.</p>
+<p>Rose, Lemon, Jasmine and Lavender cleaners</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1">
 <h3>Laundry Care</h3>
-<p>Laundry detergent, perfume detergent, bleach and stain remover.</p>
+<p>Detergent, bleach and stain removers</p>
 </div>
 
 <div class="card">
-<h3>Bathroom Care</h3>
-<p>Toilet cleaner, toilet bleach, urinal cubes and sanitizing liquids.</p>
+<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
+<h3>Kitchen Care</h3>
+<p>Dishwash liquids and degreasers</p>
 </div>
 
 <div class="card">
-<h3>Kitchen Cleaning</h3>
-<p>Utensil liquid soap, lemon dishwash and powerful degreasers.</p>
-</div>
-
-<div class="card">
-<h3>Surface & Glass</h3>
-<p>Glass cleaner, tap cleaner, chimney cleaner and polish.</p>
-</div>
-
-<div class="card">
+<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
 <h3>Hygiene Products</h3>
-<p>Handwash, sanitizers and room fresheners.</p>
+<p>Handwash, sanitizers and fresheners</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752">
 <h3>Cleaning Tools</h3>
-<p>Wipers, mops, dusters, grass brooms and bin bags.</p>
+<p>Mops, wipers, brooms and dusters</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="section about">
+<section class="products" id="products">
+
+<h2>Our Complete Product List</h2>
+
+<ul>
+
+<li>White Disinfectant Fluid</li>
+<li>Premium White Disinfectant</li>
+<li>White Disinfectant Concentrate (10L)</li>
+<li>Black Phenyle</li>
+
+<li>Gel Floor Cleaner – Rose, Lemon, Jasmine, Lavender, Dettol</li>
+<li>Gel Floor Cleaner Concentrate</li>
+<li>Italian Marble Cleaner</li>
+<li>Wooden Floor Cleaner</li>
+
+<li>Toilet Cleaner</li>
+<li>Toilet Bleach</li>
+
+<li>Glass Cleaner</li>
+<li>Floor Shampoo</li>
+<li>Taps / Chimney Cleaner</li>
+
+<li>Hand Wash – Rose, Lemon, Lavender, Dettol, Sandal, Coconut, Green Apple</li>
+
+<li>Laundry Detergent – 500ml ₹60 / 1L ₹110</li>
+
+<li>Perfume Laundry Detergent</li>
+
+<li>Laundry Bleach</li>
+
+<li>Surf</li>
+
+<li>Utensils Liquid Soap</li>
+<li>Lemon Utensils Liquid Soap</li>
+
+<li>Liquid Soap Kit</li>
+
+<li>Room Freshener</li>
+
+<li>Car Shampoo</li>
+
+<li>Liquid Spray Sanitizer</li>
+<li>Gel Based Sanitizer</li>
+
+<li>Car Polish</li>
+<li>Dashboard Polish</li>
+
+<li>Caustic Soda (Pipe Block Cleaner)</li>
+
+<li>Mosquito Killer Liquid</li>
+<li>Cockroach Killer</li>
+<li>Bedbug Killer</li>
+<li>Termite Killer</li>
+<li>Rat Killer</li>
+<li>Insect Killer</li>
+
+<li>Round Air Freshener Brick</li>
+<li>Urinal Cubes</li>
+<li>Flushmatic</li>
+
+<li>Napthalene Balls</li>
+
+<li>Steel Wipers – 12 / 16 / 18 / 21 inch</li>
+<li>Rod Steel Wiper Silicon Blade</li>
+<li>Plastic Wipers</li>
+
+<li>Pocha – Small / Large</li>
+
+<li>Khadi Kapda Pocha</li>
+
+<li>Dusters – Small / Medium / Large / XL</li>
+
+<li>Grass Broom</li>
+<li>Plastic Grass Broom</li>
+
+<li>Bin Bags – Small / Medium / Large</li>
+
+</ul>
+
+</section>
+
+<section class="section" id="about">
 
 <h2>About Airavat Homecare</h2>
 
-<p>
-Airavat Homecare provides high quality home cleaning products
-designed for homes, offices, hotels and industries.
-Our mission is to deliver powerful cleaning solutions
-with strong fragrance and effective hygiene protection.
+<p style="text-align:center;max-width:800px;margin:auto">
+
+Airavat Homecare manufactures premium cleaning products designed for
+homes, hotels and commercial facilities. Our wide range of disinfectants,
+detergents, sanitizers and cleaning tools ensures powerful hygiene
+protection and strong fragrance performance.
+
+</p>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Us</h2>
+
+<p style="text-align:center">
+
+For dealership and product orders contact us on WhatsApp.
+
 </p>
 
 </section>
@@ -199,11 +286,11 @@ with strong fragrance and effective hygiene protection.
 <footer>
 
 <p>© 2026 Airavat Homecare</p>
-<p>Quality Cleaning Products Manufacturer</p>
+<p>Premium Cleaning Products Manufacturer</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/">WhatsApp Order</a>
+<a class="whatsapp" href="https://wa.me/">Order on WhatsApp</a>
 
 </body>
 </html>
