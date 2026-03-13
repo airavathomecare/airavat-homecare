@@ -3,7 +3,7 @@
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Airavat Homecare | Premium Cleaning Products</title>
+<title>Airavat Homecare | Professional Cleaning Solutions</title>
 
 <style>
 
@@ -15,13 +15,13 @@ font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f7fc;
+background:#f4f7fb;
 }
 
 / HEADER /
 
 header{
-background:#0b1f3a;
+background:#0c2340;
 color:white;
 display:flex;
 justify-content:space-between;
@@ -45,8 +45,9 @@ font-size:17px;
 / HERO /
 
 .hero{
-height:85vh;
-background:url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1581578731548-c64695cc6952");
 background-size:cover;
 background-position:center;
 display:flex;
@@ -58,26 +59,26 @@ padding:40px;
 }
 
 .hero h1{
-font-size:58px;
+font-size:60px;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
+font-size:22px;
 }
 
 .btn{
 margin-top:30px;
-padding:14px 32px;
+padding:15px 35px;
 background:#00a8e8;
 color:white;
-border-radius:30px;
+border-radius:40px;
 text-decoration:none;
 font-size:18px;
 display:inline-block;
 }
 
-/ SECTION /
+/ SECTIONS /
 
 .section{
 padding:80px 10%;
@@ -85,23 +86,23 @@ padding:80px 10%;
 
 .section h2{
 text-align:center;
-font-size:38px;
-margin-bottom:50px;
-color:#0b1f3a;
+font-size:40px;
+margin-bottom:60px;
+color:#0c2340;
 }
 
-/ CATEGORY GRID /
+/ PRODUCT GRID /
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
 .card{
 background:white;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
 overflow:hidden;
 transition:0.3s;
 }
@@ -112,21 +113,37 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 }
 
 .card h3{
-padding:15px;
+padding:18px;
 color:#004aad;
 }
 
 .card p{
-padding:0 15px 20px;
-color:#444;
+padding:0 18px 25px;
+color:#555;
 }
 
-/ PRODUCT LIST /
+/ TRUST /
+
+.trust{
+background:#eef3fb;
+text-align:center;
+}
+
+.trust-grid{
+display:flex;
+justify-content:center;
+gap:80px;
+margin-top:40px;
+font-size:22px;
+font-weight:bold;
+}
+
+/ PRODUCTS LIST /
 
 .products{
 background:white;
@@ -140,41 +157,25 @@ margin-top:30px;
 
 .products ul{
 margin-top:10px;
-line-height:30px;
 columns:2;
-}
-
-/ TRUST SECTION /
-
-.trust{
-background:#eef3fb;
-text-align:center;
-}
-
-.trust-grid{
-display:flex;
-justify-content:center;
-gap:70px;
-margin-top:40px;
-font-size:20px;
-font-weight:bold;
+line-height:30px;
 }
 
 / ABOUT /
 
 .about{
-background:#ffffff;
+background:#f4f7fb;
 text-align:center;
 }
 
 .about p{
 max-width:900px;
 margin:auto;
+font-size:18px;
 line-height:30px;
-font-size:17px;
 }
 
-/ DEALER SECTION /
+/ DEALER /
 
 .dealer{
 background:#004aad;
@@ -183,16 +184,13 @@ text-align:center;
 padding:80px 20px;
 }
 
-.dealer h2{
-color:white;
-margin-bottom:20px;
-}
-
 .dealer a{
+margin-top:20px;
+display:inline-block;
 background:white;
 color:#004aad;
-padding:14px 30px;
-border-radius:30px;
+padding:15px 35px;
+border-radius:35px;
 text-decoration:none;
 font-weight:bold;
 }
@@ -200,7 +198,7 @@ font-weight:bold;
 / FOOTER /
 
 footer{
-background:#0b1f3a;
+background:#0c2340;
 color:white;
 text-align:center;
 padding:40px;
@@ -214,7 +212,7 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:16px 28px;
+padding:16px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
@@ -231,12 +229,10 @@ font-weight:bold;
 <div class="logo">AIRAVAT HOMECARE</div>
 
 <nav>
-
 <a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 </header>
@@ -245,11 +241,11 @@ font-weight:bold;
 
 <div>
 
-<h1>Advanced Cleaning & Hygiene Solutions</h1>
+<h1>Next Generation Cleaning & Hygiene</h1>
 
-<p>Premium Cleaning Products for Homes, Hotels, Offices & Industries</p>
+<p>Powerful Cleaning Solutions for Homes, Hotels & Industries</p>
 
-<a class="btn" href="#products">Explore Our Products</a>
+<a class="btn" href="#products">View Our Products</a>
 
 </div>
 
@@ -264,38 +260,52 @@ font-weight:bold;
 <div class="card">
 <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04">
 <h3>Disinfectants</h3>
-<p>High-performance disinfectant fluids and phenyl solutions designed for powerful germ protection.</p>
+<p>Premium disinfectant fluids and phenyl designed for powerful germ protection.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1583947581924-a31c4a3c8b6d">
-<h3>Floor Cleaning</h3>
-<p>Advanced gel floor cleaners with strong cleaning power and refreshing fragrance.</p>
+<h3>Floor Cleaners</h3>
+<p>Advanced gel floor cleaners that remove dirt while leaving long lasting fragrance.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1">
 <h3>Laundry Care</h3>
-<p>Premium detergents and bleach that remove stains while protecting fabrics.</p>
+<p>High performance detergents and bleach for powerful stain removal.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
 <h3>Kitchen Cleaning</h3>
-<p>Powerful dishwashing liquids and degreasers for spotless utensils.</p>
+<p>Dishwashing liquids and degreasers that clean utensils perfectly.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
 <h3>Hygiene Products</h3>
-<p>Handwash, sanitizers and hygiene products for everyday protection.</p>
+<p>Handwash and sanitizers designed for everyday hygiene protection.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752">
 <h3>Cleaning Tools</h3>
-<p>Mops, wipers, brooms and dusters designed for efficient cleaning.</p>
+<p>Mops, wipers, brooms and dusters for efficient cleaning.</p>
 </div>
+
+</div>
+
+</section>
+
+<section class="section trust">
+
+<h2>Why Choose Airavat Homecare</h2>
+
+<div class="trust-grid">
+
+<div>50+ Premium Products</div>
+<div>Advanced Cleaning Technology</div>
+<div>Trusted Hygiene Solutions</div>
 
 </div>
 
@@ -315,8 +325,7 @@ font-weight:bold;
 
 <h3>Floor Cleaning</h3>
 <ul>
-<li>Gel Floor Cleaner (Rose, Lemon, Jasmine, Lavender, Dettol)</li>
-<li>Gel Floor Cleaner Concentrate</li>
+<li>Gel Floor Cleaner</li>
 <li>Italian Marble Cleaner</li>
 <li>Wooden Floor Cleaner</li>
 </ul>
@@ -326,7 +335,6 @@ font-weight:bold;
 <li>Laundry Detergent</li>
 <li>Perfume Laundry Detergent</li>
 <li>Laundry Bleach</li>
-<li>Surf</li>
 </ul>
 
 <h3>Kitchen Care</h3>
@@ -335,37 +343,14 @@ font-weight:bold;
 <li>Lemon Utensils Liquid Soap</li>
 </ul>
 
-<h3>Hygiene Products</h3>
-<ul>
-<li>Handwash (Rose, Lemon, Lavender, Dettol, Sandal, Coconut, Green Apple)</li>
-<li>Liquid Spray Sanitizer</li>
-<li>Gel Based Sanitizer</li>
-<li>Room Freshener</li>
-</ul>
-
 <h3>Cleaning Tools</h3>
 <ul>
 <li>Steel Wipers</li>
-<li>Plastic Wipers</li>
-<li>Pocha</li>
+<li>Mops</li>
 <li>Dusters</li>
-<li>Grass Broom</li>
+<li>Grass Brooms</li>
 <li>Bin Bags</li>
 </ul>
-
-</section>
-
-<section class="section trust">
-
-<h2>Why Customers Choose Airavat Homecare</h2>
-
-<div class="trust-grid">
-
-<div>50+ Premium Products</div>
-<div>Powerful Cleaning Formulas</div>
-<div>Trusted Hygiene Solutions</div>
-
-</div>
 
 </section>
 
@@ -375,11 +360,9 @@ font-weight:bold;
 
 <p>
 
-Airavat Homecare is a rapidly growing manufacturer of premium cleaning and hygiene products designed for modern homes, commercial facilities and industrial environments. Built on a foundation of quality, performance and innovation, the brand offers a comprehensive range of disinfectants, detergents, sanitizers, surface cleaners and professional cleaning tools.
+Airavat Homecare is a fast growing manufacturer of professional cleaning and hygiene products built to deliver powerful performance and reliable results. The brand offers a wide range of disinfectants, detergents, surface cleaners and cleaning tools designed to meet the hygiene needs of homes, offices, hotels and industries.
 
-Every product developed by Airavat Homecare focuses on powerful cleaning performance, effective germ protection and long lasting freshness. The brand continuously improves its formulations to meet the evolving hygiene needs of households and businesses.
-
-With a wide portfolio of cleaning and sanitation solutions, Airavat Homecare aims to become a trusted name in hygiene products across homes, offices, hotels, hospitals and industries.
+Our focus on quality formulations, effective germ protection and long lasting freshness has helped Airavat Homecare build a reputation for dependable cleaning solutions. With continuous innovation and commitment to customer satisfaction, the brand continues to expand its product portfolio to provide complete hygiene solutions under one trusted name.
 
 </p>
 
@@ -387,13 +370,11 @@ With a wide portfolio of cleaning and sanitation solutions, Airavat Homecare aim
 
 <section class="dealer">
 
-<h2>Become an Airavat Homecare Distributor</h2>
+<h2>Become a Distributor</h2>
 
-<p>Partner with a fast-growing cleaning products brand.</p>
+<p>Join the growing Airavat Homecare distribution network.</p>
 
-<br>
-
-<a href="#">Contact for Dealership</a>
+<a href="#">Contact Us for Dealership</a>
 
 </section>
 
