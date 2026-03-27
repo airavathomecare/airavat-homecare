@@ -1,349 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐌𝐈𝐓𝐇𝐔𝐍 ➤𝐕𝐈𝐏 𝐒𝐈𝐆𝐍𝐀𝐋 Step Maker</title>
+    <style>
+        :root {
+            --bg-color: #020205;
+            --card-bg: #0b0e1a;
+            --neon-blue: #00f2ff;
+            --neon-pink: #ff00ea;
+            --neon-green: #39ff14;
+            --btn-grad: linear-gradient(45deg, #00f2ff, #ff00ea);
+        }
 
-<title>Airavat Homecare | Premium Cleaning Products</title>
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at center, #161b33 0%, #020205 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        /* ঝলমলে এনিমেটেড বর্ডার কন্টেইনার */
+        .container {
+            position: relative;
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 30px;
+            border-radius: 25px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 242, 255, 0.15);
+        }
 
-<style>
+        /* বর্ডারে ঘুরন্ত আলোর ইফেক্ট */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(
+                transparent, 
+                var(--neon-blue), 
+                var(--neon-pink), 
+                var(--neon-blue), 
+                transparent 40%
+            );
+            animation: rotateLight 4s linear infinite;
+            z-index: 1;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+        .container::after {
+            content: "";
+            position: absolute;
+            inset: 4px;
+            background: var(--card-bg);
+            border-radius: 22px;
+            z-index: 2;
+        }
 
-body{
-background:#f4f6fb;
-color:#333;
-}
+        .content-box {
+            position: relative;
+            z-index: 3; /* সব লেখা বর্ডারের উপরে রাখার জন্য */
+        }
 
-/* NAVBAR */
+        @keyframes rotateLight {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:white;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
-}
+        h1 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+            letter-spacing: 1px;
+        }
 
-.logo{
-font-size:26px;
-font-weight:600;
-color:#004aad;
-}
+        .owner {
+            color: var(--neon-green);
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 0 0 8px var(--neon-green);
+            text-transform: uppercase;
+        }
 
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
+        .main-title {
+            font-size: 22px;
+            margin-bottom: 25px;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 0 0 5px #ff00ea;
+        }
 
-/* HERO */
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
-.hero{
-height:85vh;
-background:linear-gradient(120deg,#004aad,#00a8e8);
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:20px;
-}
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: var(--neon-blue);
+            font-weight: 600;
+        }
 
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
+        input {
+            width: 100%;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            border-radius: 12px;
+            color: white;
+            font-size: 18px;
+            box-sizing: border-box;
+            outline: none;
+            transition: 0.3s;
+        }
 
-.hero p{
-font-size:20px;
-max-width:650px;
-margin:auto;
-}
+        input:focus {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 15px var(--neon-blue);
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-.hero button{
-margin-top:30px;
-padding:14px 35px;
-border:none;
-background:white;
-color:#004aad;
-font-weight:600;
-border-radius:30px;
-cursor:pointer;
-}
+        .calculate-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--btn-grad);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 234, 0.4);
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
 
-/* SECTION */
+        .calculate-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.6);
+        }
 
-.section{
-padding:80px 10%;
-}
+        .result-section {
+            margin-top: 30px;
+            text-align: left;
+        }
 
-.section h2{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
-color:#004aad;
-}
+        .result-title {
+            font-size: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px var(--neon-pink);
+        }
 
-/* PRODUCT GRID */
+        .step-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 18px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 4px solid var(--neon-blue);
+        }
 
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
+        .step-name { color: #ccc; font-weight: 500; }
+        .step-value { color: var(--neon-green); font-weight: 800; text-shadow: 0 0 5px var(--neon-green); }
 
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,0.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:160px;
-object-fit:cover;
-border-radius:8px;
-margin-bottom:15px;
-}
-
-.card h3{
-color:#004aad;
-margin-bottom:8px;
-}
-
-/* TRUST */
-
-.trust{
-background:white;
-text-align:center;
-}
-
-.trust-grid{
-display:flex;
-justify-content:center;
-gap:80px;
-font-size:20px;
-margin-top:30px;
-font-weight:600;
-}
-
-/* ABOUT */
-
-.about{
-text-align:center;
-line-height:1.8;
-max-width:900px;
-margin:auto;
-}
-
-/* DEALER */
-
-.dealer{
-background:#004aad;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-.dealer input{
-padding:12px;
-margin:10px;
-border:none;
-border-radius:6px;
-width:240px;
-}
-
-.dealer button{
-padding:12px 30px;
-border:none;
-border-radius:30px;
-background:white;
-color:#004aad;
-font-weight:600;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:30px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-}
-
-</style>
-
+    </style>
 </head>
-
 <body>
 
-<nav>
+<div class="container">
+    <div class="content-box">
+        <h1>𝐌𝐈𝐓𝐇𝐔𝐍 ➤𝐕𝐈𝐏 𝐒𝐈𝐆𝐍𝐀𝐋</h1>
+        <div class="owner">owner of MITHUN.</div>
+        
+        <div class="main-title">স্টেপ মেকার ক্যালকুলেটর</div>
 
-<div class="logo">Airavat Homecare</div>
+        <div class="input-group">
+            <label>মোট টাকা (৳)</label>
+            <input type="number" id="totalAmount" value="300">
+        </div>
 
-<div>
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#dealer">Dealership</a>
+        <div class="input-group">
+            <label>স্টেপ সংখ্যা</label>
+            <input type="number" id="stepCount" value="5">
+        </div>
+
+        <button class="calculate-btn" onclick="generateSteps()">স্টেপ তৈরি করুন</button>
+
+        <div class="result-section" id="resultSection" style="display: none;">
+            <div class="result-title">ফলাফল</div>
+            <div id="stepsList"></div>
+        </div>
+    </div>
 </div>
 
-</nav>
+<script>
+    function generateSteps() {
+        const totalAmount = parseFloat(document.getElementById('totalAmount').value);
+        const steps = parseInt(document.getElementById('stepCount').value);
+        const stepsList = document.getElementById('stepsList');
+        const resultSection = document.getElementById('resultSection');
 
-<section class="hero">
+        if (isNaN(totalAmount) || isNaN(steps) || steps <= 0) {
+            alert("দয়া করে সঠিক সংখ্যা দিন।");
+            return;
+        }
 
-<div>
+        stepsList.innerHTML = '';
+        resultSection.style.display = 'block';
 
-<h1>Premium Cleaning Solutions</h1>
+        let firstStep = totalAmount / (Math.pow(2, steps) - 1);
 
-<p>
-High quality hygiene and cleaning products designed for homes,
-offices, hotels and industries.
-</p>
-
-<button>Explore Products</button>
-
-</div>
-
-</section>
-
-<section class="section trust">
-
-<h2>Why Choose Airavat Homecare</h2>
-
-<div class="trust-grid">
-
-<div>50+ Products</div>
-<div>Premium Formulations</div>
-<div>Trusted Quality</div>
-
-</div>
-
-</section>
-
-<section class="section" id="products">
-
-<h2>Our Products</h2>
-
-<div class="products">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583947581924-a31c4a3c8b6d">
-<h3>Gel Floor Cleaner</h3>
-<p>Rose, Lemon, Jasmine and Lavender fragrance floor cleaners.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04">
-<h3>White Disinfectant</h3>
-<p>Powerful disinfectant fluid for hygienic surfaces.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1">
-<h3>Utensil Liquid</h3>
-<p>Strong grease removal dishwashing liquid.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1">
-<h3>Laundry Detergent</h3>
-<p>Stain removal detergent for every type of cloth.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
-<h3>Hand Wash</h3>
-<p>Fragrant liquid handwash for daily hygiene.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583947582886-f40ec95dd752">
-<h3>Cleaning Tools</h3>
-<p>Mops, wipers, dusters and brooms for professional cleaning.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section about" id="about">
-
-<h2>About Airavat Homecare</h2>
-
-<p>
-
-Airavat Homecare is a fast growing brand dedicated to delivering
-high quality cleaning and hygiene solutions. Our extensive range of
-cleaning chemicals, detergents, disinfectants and cleaning tools
-are designed to maintain superior hygiene standards.
-
-We are committed to providing reliable products that ensure
-clean, fresh and healthy environments for homes, businesses
-and industries.
-
-</p>
-
-</section>
-
-<section class="dealer" id="dealer">
-
-<h2>Become a Distributor</h2>
-
-<p>Join our growing network of dealers and distributors.</p>
-
-<br>
-
-<input type="text" placeholder="Your Name">
-<input type="text" placeholder="Phone Number">
-<input type="email" placeholder="Email">
-
-<br>
-
-<button>Submit Enquiry</button>
-
-</section>
-
-<footer>
-
-<p>© 2026 Airavat Homecare</p>
-<p>Premium Cleaning & Hygiene Products</p>
-
-</footer>
-
-<a class="whatsapp" href="#">WhatsApp Order</a>
+        for (let i = 1; i <= steps; i++) {
+            let stepVal = firstStep * Math.pow(2, i - 1);
+            
+            const div = document.createElement('div');
+            div.className = 'step-item';
+            div.innerHTML = `
+                <span class="step-name">স্টেপ ${i}</span>
+                <span class="step-value">${stepVal.toFixed(2)} ৳</span>
+            `;
+            stepsList.appendChild(div);
+        }
+    }
+</script>
 
 </body>
 </html>
